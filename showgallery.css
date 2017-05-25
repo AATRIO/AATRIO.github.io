@@ -1,0 +1,72 @@
+@keyframes carousely {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -100%; }
+55% { left: -200%; }
+75% { left: -200%; }
+80% { left: -200%; }
+85% { left: -300%; }
+100% { left: -300%; }
+}
+
+
+.slider .carousel {
+	position: absolute;
+	width: 500%; /* Don't touch this */
+	margin-top:130px;
+	left: 0;
+	animation: 20s carousely infinite; 
+}
+
+.carousel .slide {
+	width: 20%; /* Don't touch this */
+	float: left;
+	height: 600px; /* Change this if you want a bigger slideshow */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide h2{
+	position: relative;
+	font-size: 3.125rem; /* 50px */
+	color: #fff;
+	display: inline-block;
+}
+
+.slider2 .carousel2 {
+	position: absolute;
+	width: 500%; /* Don't touch this */
+	margin-top:130px;
+	margin-left:0;
+	left: 0;
+	animation: 20s carousely infinite; 
+}
+
+.carousel2 .slide2 {
+	width: 20%; /* Don't touch this */
+	float: left;
+	height: 600px; /* Change this if you want a bigger slideshow */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide2 h2{
+	position: relative;
+	font-size: 3.125rem; /* 50px */
+	color: #fff;
+	display: inline-block;
+}
+
+.fig1{
+	background-size: cover;
+	background-position: center center;
+}
+
+.fig2{
+	background-size: cover;
+	background-position: center center;
+}
