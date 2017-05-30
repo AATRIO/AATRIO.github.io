@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>ATRIO</title>
+		
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+				
+		<link rel="stylesheet" href="Sapiens.css"/>
+		<link rel="stylesheet" href="modalgaleria.css"/>
+		<link rel="stylesheet" href="showgallery.css"/>
+		<link rel="stylesheet" href="videogame.css"/>
+		<link rel="stylesheet" href="sliders_choose_me.css"/>	
+		
+	<meta charset="utf-8"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function(){
+			// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+
+			// Store hash
+			var hash = this.hash;
+
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+				});
+			} // End if
+		});
+	});
+
+</script>
+				
+</head>
+
+<body>
+
+	<section class="INICIO">
+		
+		<article class="FONDO">
+		
+			<img src="imagenes/retrato_inicio.png" alt="">
+			
+			<div class="ATRIO">
+			
+				<img id="MiBoton" src="imagenes/logo.png" alt="">
+			
+			</div>
+			
+		</article>
+		
+		<article class="IDENT">
+		
+			<p> ALEJANDRO ATRIO </p>
+			<p>GENERALISTA 3D</p>
+		
+		</article>
+
+	</section>
+	
+	<section id="myModal" >
+	
+		<article class="MENU_content">
+	
+			<div class="elige">
+			
+				 <a href="#SELECTION_ZONE">
+				 
+					<p>
+			
+						Choose
+			
+					</p>
+				
+				</a> 
+				
+				 <a href="#VIDEOGAME_ZONE">
+				 
+					<p>
+			
+						Videogame
+			
+					</p>
+					
+				</a>
+				
+				<a href="#GAME_PLAY">
+				
+					<p>
+			
+						Game Play
+			
+					</p>
+					
+				</a>
+				
+				<a href="#DEMOREEL_ZONE">
+				
+					<p>
+			
+						Demo Reel
+			
+					</p>
+					
+				</a>
+					
+				<a href="#CONTACT_ZONE">
+			
+					<p>
+			
+						About Me / Contact
+			
+					</p>
+					
+				</a>
+			
+			</div>	
+	
+		</article>
+		
+	</section>
+	
+	<section id="SELECTION_ZONE" class="SELECTION_ZONE">
+	
+		<div class="SlideShow">
+
+				<s id="s1"></s> 
+				<s id="s2"></s>
+
+			<div class="slider">
+				
+				<article class="Area_00">
+				
+					<img src="imagenes/final_render.jpg" alt="">
+					
+					<div class="CHOOSE00" onclick="abrirGaleria('modalArmadura');" >
+		
+						<div class="TEXTO_CHOOSE00">
+			
+							<p>  
+				
+							CHOOSE
+							ME
+				  
+							</p>
+			
+						</div>
+		
+					</div>
+				
+				</article>
+		
+				<article class="Area_01">
+				
+					<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+	
+						<source src="videos/shading_video.mp4" type="video/mp4">
+			
+					</video>
+					
+					<div class="CHOOSE01">
+		
+						<div class="TEXTO_CHOOSE01">
+			
+							<p>  
+				
+							CHOOSE
+							ME
+				  
+							</p>
+			
+						</div>
+		
+					</div>
+				
+				</article>
+		
+				<article class="Area_02">
+				
+					<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+	
+						<source src="videos/coche_lambert.mp4" type="video/mp4">
+			
+					</video>
+					
+					<div class="CHOOSE02">
+		
+						<div class="TEXTO_CHOOSE02">
+			
+							<p>  
+				
+							CHOOSE
+							ME
+				  
+							</p>
+			
+						</div>
+		
+					</div>
+				
+				</article>
+				
+				<article class="Area_03">
+				
+					<img src="imagenes/pez_frontal_lambert.jpg" alt="">
+					
+					<div class="CHOOSE03">
+		
+						<div class="TEXTO_CHOOSE03" onclick="abrirGaleria('modalpez');" >
+			
+							<p>  
+				
+							CHOOSE
+							ME
+				  
+							</p>
+			
+						</div>
+		
+					</div>
+				
+				</article>
+				
+				<article class="Area_04">
+				
+					<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+	
+						<source src="videos/animation_video.mp4" type="video/mp4">
+			
+					</video>
+					
+					<div class="CHOOSE04">
+		
+						<div class="TEXTO_CHOOSE04">
+			
+							<p>  
+				
+							CHOOSE
+							ME
+				  
+							</p>
+			
+						</div>
+		
+					</div>
+				
+				</article>
+				
+				<article class="Area_05">
+				
+					<img src="imagenes/guitarra_lateral.jpg" alt="">
+					
+					<div class="CHOOSE05">
+		
+						<div class="TEXTO_CHOOSE05" onclick="abrirGaleria('modalguitarra');" >
+			
+							<p>  
+				
+							CHOOSE
+							ME
+				  
+							</p>
+			
+						</div>
+		
+					</div>
+				
+				</article>
+				
+				<article class="Area_06">
+
+				<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+				
+					<source src="videos/angel_arena_demo_reducido.mp4" type="video/mp4">
+					
+				</video>
+					
+					<div class="CHOOSE06" >
+		
+						<div class="TEXTO_CHOOSE06" onclick="abrirGaleria('modalAngel');" >
+			
+							<p>  
+				
+							CHOOSE
+							ME
+				  
+							</p>
+							
+						</div>
+			
+					</div>
+									
+				</article>
+				
+				<article class="Area_07">
+				
+					<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+	
+						<source src="videos/caballo_explotes.mp4" type="video/mp4">
+			
+					</video>
+					
+					<div class="CHOOSE07">
+		
+						<div class="TEXTO_CHOOSE07">
+			
+							<p>  
+				
+							CHOOSE
+							ME
+				  
+							</p>
+			
+						</div>
+		
+					</div>
+				
+				</article>
+				
+				<article class="Area_08">
+				
+					<img src="imagenes/estampado.jpg" alt="">
+					
+					<div class="CHOOSE08">
+		
+						<div class="TEXTO_CHOOSE08">
+			
+							<p>  
+				
+							CHOOSE
+							ME
+				  
+							</p>
+			
+						</div>
+		
+					</div>
+				
+				</article>
+				
+				<article class="Area_09">
+				
+					<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+	
+						<source src="videos/rigging_video.mp4" type="video/mp4">
+			
+					</video>
+				
+				</article>
+				
+				<article class="Area_10">
+				
+					<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+	
+						<source src="videos/shading_video.mp4" type="video/mp4">
+			
+					</video>
+				
+				</article>
+				
+				<article class="Area_11">
+				
+					<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+	
+						<source src="videos/shading_video.mp4" type="video/mp4">
+			
+					</video>
+				
+				</article>
+			
+			</div>
+
+			<div class="bullets">
+  
+				<a href="#s1"></a>
+				<a href="#s2"></a>
+	
+			</div>
+	
+		</div>
+		
+		<article id="modalAngel" class="modalGaleria">
+		
+			<div class="modal-content">
+		  
+			<span class="close" onclick="cierraModal();">&times;</span>
+			
+				<div class="video_angel">
+			
+					<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+				
+						<source src="videos/angel_arena_demo_reducido.mp4" type="video/mp4">
+					
+					</video>
+				
+				</div>
+			
+			</div>
+		
+		</article>
+		
+		
+		<article id="modalArmadura" class="modalGaleria">
+		
+		  <div class="modal-content">
+		  
+			<span class="close" onclick="cierraModal();">&times;</span>
+			
+			<div class="Galeriaarmadura">
+
+				<s id="g1armadura"></s> 
+				<s id="g2armadura"></s>
+				<s id="g3armadura"></s>
+				<s id="g4armadura"></s>
+
+				<div class="sliderGALERIAarmadura">
+				
+					<div class="slide2 fig1">
+				
+						<img src="imagenes/final_render.jpg" alt="">
+					
+					</div>
+				
+					<div class="slide2 fig2">
+				
+						<img src="imagenes/coraza_sup.jpg" alt="">
+					
+					</div>
+				
+					<div class="slide2 fig3">
+				
+						<img src="imagenes/pez_trasero_lambert.jpg" alt="">
+					
+					</div>
+				
+					<div class="slide2 fig4">
+				
+						<img src="imagenes/pez_trasero_wire.jpg" alt="">
+					
+					</div>
+					
+				</div>
+				
+				<div class="prevNextGaleriaarmadura">
+  
+					<div><a href="#g4armadura"></a><a href="#g2armadura"></a></div>
+					<div><a href="#g1armadura"></a><a href="#g3armadura"></a></div>
+					<div><a href="#g2armadura"></a><a href="#g4armadura"></a></div>
+					<div><a href="#g3armadura"></a><a href="#g1armadura"></a></div>
+	
+				</div>
+
+					<div class="bulletsGaleriaarmadura">
+				
+					<a href="#g1armadura">1</a>
+					<a href="#g2armadura">2</a>
+					<a href="#g3armadura">3</a>
+					<a href="#g4armadura">4</a>
+		
+					</div>	
+				
+				</div>
+			
+			</div>
+			
+		</article>
+		
+		<article id="modalpez" class="modalGaleria">
+		
+		  <div class="modal-content">
+		  
+			<span class="close" onclick="cierraModal();">&times;</span>
+			
+			<div class="Galeriapez">
+
+
+				<s id="g1pez"></s> 
+				<s id="g2pez"></s>
+				<s id="g3pez"></s>
+				<s id="g4pez"></s>
+
+				<div class="sliderGALERIApez">
+				
+					<div class="slide2 fig1">
+				
+						<img src="imagenes/pez_frontal_lambert.jpg" alt="">
+					
+					</div>
+				
+					<div class="slide2 fig2">
+				
+						<img src="imagenes/pez_frontal_wire.jpg" alt="">
+					
+					</div>
+				
+					<div class="slide2 fig3">
+				
+						<img src="imagenes/pez_trasero_lambert.jpg" alt="">
+					
+					</div>
+				
+					<div class="slide2 fig4">
+				
+						<img src="imagenes/pez_trasero_wire.jpg" alt="">
+					
+					</div>
+					
+				</div>
+				
+				<div class="prevNextGaleriapez">
+  
+					<div><a href="#g4pez"></a><a href="#g2pez"></a></div>
+					<div><a href="#g1pez"></a><a href="#g3pez"></a></div>
+					<div><a href="#g2pez"></a><a href="#g4pez"></a></div>
+					<div><a href="#g3pez"></a><a href="#g1pez"></a></div>
+	
+				</div>
+
+				<div class="bulletsGaleriapez">
+
+				<a href="#g1pez">1</a>
+				<a href="#g2pez">2</a>
+				<a href="#g3pez">3</a>
+				<a href="#g4pez">4</a>
+	
+				</div>
+			
+			</div>
+			
+		  </div>
+		
+		</article>
+		
+		<article id="modalguitarra" class="modalGaleria">
+		
+		  <div class="modal-content">
+		  
+			<span class="close" onclick="cierraModal();">&times;</span>
+			
+			<div class="Galeriaguitarra">
+
+
+				<s id="g1guitarra"></s> 
+				<s id="g2guitarra"></s>
+				<s id="g3guitarra"></s>
+				<s id="g4guitarra"></s>
+
+				<div class="sliderGALERIAguitarra">
+				
+					<div class="slide2 fig1">
+				
+						<img src="imagenes/cuerpo_guitarra.jpg" alt="">
+					
+					</div>
+				
+					<div class="slide2 fig2">
+				
+						<img src="imagenes/mastil_guitarra.jpg" alt="">
+					
+					</div>
+				
+					<div class="slide2 fig3">
+				
+						<img src="imagenes/guitarra_lateral.jpg" alt="">
+					
+					</div>
+				
+					<div class="slide2 fig4">
+				
+						<img src="imagenes/guitarra_mastil.jpg" alt="">
+					
+					</div>
+					
+				</div>
+				
+				<div class="prevNextGaleriaguitarra">
+  
+					<div><a href="#g4guitarra"></a><a href="#g2guitarra"></a></div>
+					<div><a href="#g1guitarra"></a><a href="#g3guitarra"></a></div>
+					<div><a href="#g2guitarra"></a><a href="#g4guitarra"></a></div>
+					<div><a href="#g3guitarra"></a><a href="#g1guitarra"></a></div>
+	
+				</div>
+
+				<div class="bulletsGaleriaguitarra">
+
+				<a href="#g1guitarra">1</a>
+				<a href="#g2guitarra">2</a>
+				<a href="#g3guitarra">3</a>
+				<a href="#g4guitarra">4</a>
+	
+				</div>
+			
+			</div>
+			
+		  </div>
+		
+		</article>
+		
+		
+	</section>
+
+	<section id="VIDEOGAME_ZONE" class="VIDEOJUEGO_PRINCIPAL">
+	
+		<article class="TITULO">
+				
+					<p>
+					
+						VIDEOGAME
+					
+					</p>
+		
+		</article>
+		
+			
+		
+		<div class= "Videojuego_texto">
+			
+			<div class="DESARROLLO">
+				<p>
+			
+					DESARROLLO
+			
+				</p>
+			
+			</div>
+			
+			<div class="raya_negra"></div>
+			
+			<p>
+				
+				Un_videojuego_sencillo_y_elegante,_enfocado_en_el_Diseno
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+				
+			</p>
+		
+		</div>
+			
+			
+			<div class="etiqueta">
+			
+				<img src="imagenes/game_play.png" alt="">
+			
+			</div>
+			
+			<article id="GAME_PLAY" class="GAMEPLAY">
+			
+				<video playsinline autoplay muted loop poster="polina.jpg" class="bgvid">
+	
+					<source src="videos/gameplay.mp4" type="video/mp4">
+			
+				</video>
+			
+			</article>
+			
+			<div class="game_background"></div>		
+	
+	</section>
+	
+	<section id="CONTACT_ZONE" class="CONTACT">
+	
+		<article class="ABOUT">
+		
+			<section class="ME">
+			
+				<p>  
+				
+				ABOUT
+				ME
+				  
+				</p>
+			
+			</section>
+		
+		</article>
+		
+		<article class="Rectangulo_sup">
+			
+			<div class="CURRICULUM">
+			
+				<p>
+				
+					He visto a diario como muchas 
+					personas que conozco desprecian 
+					literalmente la pagina de sobre
+					mi. Unos me dicen que no saben
+					para que tienen que ponerla, otros 
+					que no saben que poner en ella e
+					incluso los hay que piensan que no
+					tiene ninguna utilidad y que ahi
+					no entra nadie.
+					
+					tlf:650559594
+					
+					mail: alejandro.atrio@gmail.com
+				
+				</p>
+			
+			</div>
+		
+		</article>
+		
+	
+		
+		<article class="social_network">
+		
+			<img id="Googlemas" src="imagenes/googleplus.png" alt="">
+			
+			<img id="Linkedin" src="imagenes/linkedin.png" alt="">
+			
+			<img id="Facebook" src="imagenes/facebook.png" alt="">
+		
+		</article>
+	
+	</section>
+	
+<script src="Sapiens.js"></script>
+	
+</body>
